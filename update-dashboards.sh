@@ -97,3 +97,4 @@ list_dashboards() {
 }
 
 main "$@"
+
