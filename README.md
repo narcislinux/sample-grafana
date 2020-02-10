@@ -1,16 +1,14 @@
 ### Usage
 
 ```sh
-make  run                 # builds grafana and prometheus 
-                          # images and initializes all three containers 
-                          # that forms the infra (grafana, prometheus and 
-                          # node_exporter).  
+make  run                 # builds grafana .  
 
 make  update-dashboards   # updates the list of json files that represent
-                          # the dashboards configured in Grafana.
+                          # the dashboards configured in intended Grafana.
+                          
+
+make  update-datasources  # updates the list of provisioning datasources yaml files 
+                          # with the datasource configured in intended Grafana.
 
 ```
 
-### More
-
-See [Initializing Grafana with preconfigured dashboards](https://ops.tips/blog/initialize-grafana-with-preconfigured-dashboards/).
